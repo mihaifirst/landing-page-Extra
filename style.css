@@ -134,10 +134,44 @@ nav label {
   margin-bottom: 50px;
 }
 
+.green {
+  color: var(--main-color);
+}
+
+.purple {
+  color: rgb(146, 31, 245);
+  margin-right: 2px;
+}
+
 /*---------------------------- Section-above-Nav----------------------------*/
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.information {
+  max-width: 530px;
+}
+
+.information > h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.information > p {
+  margin-bottom: 19px;
+  line-height: 34px;
+  font-size: 20px;
+}
+
 .wrapper {
   width: 100%;
   position: relative;
+  margin-bottom: 24px;
 }
 
 .wrapper input {
@@ -146,9 +180,11 @@ nav label {
   border-radius: 100px;
   padding: 25px 23px;
 }
+
 .wrapper input::placeholder {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  color: var(--dark-color);
 }
 
 .rounded-button {
@@ -159,6 +195,61 @@ nav label {
   position: absolute;
   top: 7px;
   right: -3px;
+}
+
+.information-images {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10px;
+  position: relative;
+}
+
+.information-images > img {
+  height: 50px;
+}
+
+.information-images > img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 25px;
+}
+
+.information-images > img:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 61px;
+  border-radius: 50%;
+}
+
+.information-images > span {
+  position: absolute;
+  right: 59px;
+}
+
+.intro-container-images > img:first-child {
+  display: none;
+}
+
+.intro-container-images > img:nth-child(2) {
+  width: 100%;
+  margin-top: 88px;
+  max-width: 360px;
+}
+
+@media (min-width: 768px) {
+  .intro-container {
+    align-items: center;
+  }
+
+  .information-images {
+    margin-left: 100px;
+  }
+
+  .information-images > span {
+    position: absolute;
+    left: 60px;
+  }
 }
 
 @media (min-width: 950px) {
@@ -187,5 +278,42 @@ nav label {
 
   nav {
     box-shadow: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .information-images {
+    margin-left: unset;
+  }
+
+  .information-images > span {
+    left: 120px;
+    right: unset;
+  }
+
+  .intro-container-images > img:first-child {
+    display: unset;
+    max-width: 435px;
+  }
+
+  .intro-container-images {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .intro-container-images > img:nth-child(2) {
+    position: absolute;
+    top: 40px;
+    left: 160px;
+  }
+
+  .purple {
+    color: unset;
   }
 }
