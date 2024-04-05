@@ -248,7 +248,7 @@ nav label {
 }
 
 .logos h2 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -275,6 +275,35 @@ nav label {
 .images > img:nth-child(3) {
   width: 164px;
   height: 34px;
+}
+
+/*---------------------------- Section-happy-friends----------------------------*/
+
+.happy-friends {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.happy-friends img {
+  width: 100%;
+}
+
+.wrapper ul {
+  position: relative;
+}
+
+.wrapper ul li {
+  list-style-type: none;
+}
+
+.wrapper ul li:first-child::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/Accountants.svg);
+  width: 54px;
+  height: 54px;
+  top: 0;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 529px) {
