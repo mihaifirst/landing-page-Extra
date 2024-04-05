@@ -237,6 +237,58 @@ nav label {
   max-width: 360px;
 }
 
+/*---------------------------- Section-after-1st-Section----------------------------*/
+
+.logos {
+  margin-top: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logos h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.images > img {
+  width: fit-content;
+}
+
+.images > img:nth-child(1) {
+  margin-bottom: 60px;
+}
+
+.images > img:nth-child(2) {
+  margin-bottom: 52px;
+}
+
+.images > img:nth-child(3) {
+  width: 164px;
+  height: 34px;
+}
+
+@media (min-width: 529px) {
+  .images > img:nth-child(1),
+  .images > img:nth-child(2) {
+    margin-bottom: unset;
+  }
+
+  .images {
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
 @media (min-width: 768px) {
   .intro-container {
     align-items: center;
@@ -249,6 +301,12 @@ nav label {
   .information-images > span {
     position: absolute;
     left: 60px;
+  }
+}
+
+@media (min-width: 789px) {
+  .images {
+    justify-content: center;
   }
 }
 
@@ -278,6 +336,9 @@ nav label {
 
   nav {
     box-shadow: none;
+  }
+  .images {
+    width: 850px;
   }
 }
 
@@ -315,5 +376,9 @@ nav label {
 
   .purple {
     color: unset;
+  }
+
+  .images {
+    justify-content: space-between;
   }
 }
