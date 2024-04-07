@@ -532,7 +532,7 @@ nav label {
 }
 
 .footer-sign-up > span {
-  /* max-width: 280px; */
+  max-width: 280px;
   margin-bottom: 32px;
   font-size: 20px;
   font-weight: 500;
