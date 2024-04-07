@@ -545,6 +545,7 @@ nav label {
   border: 1px solid #bcd0e5;
   border-radius: 5px;
 }
+
 @media (min-width: 529px) {
   .images > img:nth-child(1),
   .images > img:nth-child(2) {
