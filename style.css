@@ -384,6 +384,13 @@ nav label {
   line-height: 28px;
 }
 
+/*---------------------------- Section-product-work-2nd-macbook----------------------------*/
+
+.product-work-2nd-macbook,
+.product-work-2nd-macbook .container {
+  margin-top: 73px;
+}
+
 @media (min-width: 529px) {
   .images > img:nth-child(1),
   .images > img:nth-child(2) {
@@ -500,10 +507,15 @@ nav label {
 
   .image-info {
     flex-direction: row;
+    justify-content: center;
   }
 
   .image-info .wrapper {
     margin-left: 32px;
+  }
+
+  .product-work h2 {
+    margin-bottom: 73px;
   }
 
   .product-work .image-info img {
@@ -513,5 +525,16 @@ nav label {
   .container {
     margin-left: 90px;
     max-width: 440px;
+  }
+
+  .product-work-2nd-macbook {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .product-work-2nd-macbook .container {
+    margin-right: 76px;
+    margin-left: unset;
   }
 }
